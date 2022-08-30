@@ -1,0 +1,105 @@
+html, body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  } 
+
+body h1 {
+    font-family: 'Caudex', serif;
+    font-size: 44pt;
+    margin-top: 0pt;
+}
+
+.container h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 10px;
+    margin-bottom: 0pt;
+    font-weight:400;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/Users/grow/Desktop/Valverde, Amanda/images/eucalyptus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    line-height: 50px;
+    padding: 50px;
+}
+
+.heroimage {
+    max-width: 25%;
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    transform: rotate(-5deg);
+    border: 7px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#text {
+    text-align:center;
+}
+
+#resize {
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+}
+
+#dash {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 50px;
+}
+
+img {
+    display: block;
+}
+
+.w3-content img {
+    height: 600px;
+    width: auto;
+    margin: auto;
+}
+
+.w3-content {
+    margin: auto;
+}
+
+.mySlides {
+    display:none;
+}
+
+#obituary {
+    margin: 0 auto;
+
+    max-width: 500px;
+    font-weight:300;
+    line-height: 25px;
+    padding: 100px;
+}
+
+#obituary h1 {
+    line-height: 50px;
+    text-align:center;
+}
+
+#obituary h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 14pt;
+}
+
+footer {
+    background-image: url("/Users/grow/Desktop/Valverde, Amanda/images/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
