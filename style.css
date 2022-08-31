@@ -23,12 +23,22 @@ body h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("https://amandavalverde.github.io/celebratelilmchenry/eucalyptus.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     line-height: 50px;
     padding: 50px;
+}
+
+.container::before {
+    content: "";
+    background-image: url("https://amandavalverde.github.io/celebratelilmchenry/eucalyptus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
 }
 
 .heroimage {
