@@ -47,7 +47,7 @@ body h1 {
 }
 
 .heroimage {
-    max-width: 50%;
+    max-width: 35%;
     -ms-transform: rotate(-5deg); /* IE 9 */
     transform: rotate(-5deg);
     border: 7px solid white;
