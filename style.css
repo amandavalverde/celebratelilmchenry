@@ -125,10 +125,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     .container {
-    flex-direction: column;
-}
+    display: block;
 
-    .container::before {
-    flex-direction: column;
 }
 }
