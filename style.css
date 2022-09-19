@@ -26,16 +26,17 @@ body h1 {
 .container {
     height: 100vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     color: white;
     line-height: 50px;
     padding: 50px;
-    display: flex;
-    flex-direction: row;
 }
 
 .container::before {
+    display: flex;
+    flex-direction: row;
     content: "";
     background-image: url("https://amandavalverde.github.io/celebratelilmchenry/eucalyptus.jpg");
     background-repeat: no-repeat;
@@ -49,7 +50,6 @@ body h1 {
 }
 
 .heroimage {
-    display: flex;
     max-width: 35%;
     -ms-transform: rotate(-5deg); /* IE 9 */
     transform: rotate(-5deg);
@@ -125,7 +125,6 @@ footer {
 @media screen and (max-width: 600px) {
     .container {
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     color: white;
@@ -135,4 +134,18 @@ footer {
     flex-direction: column;
 }
 
+    .container::before {
+    display: flex;
+    flex-direction: column;
+    content: "";
+    background-image: url("https://amandavalverde.github.io/celebratelilmchenry/eucalyptus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
 }
