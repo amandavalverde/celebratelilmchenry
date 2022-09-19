@@ -120,12 +120,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
     
 .heroimage {
     display: flex;
+    flex-direction: column;
     max-width: 35%;
     -ms-transform: rotate(-5deg); /* IE 9 */
     transform: rotate(-5deg);
