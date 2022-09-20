@@ -37,7 +37,7 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #ffffff;
     line-height: 50px;
     padding: 50px;
 }
@@ -93,6 +93,8 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 img {
@@ -149,6 +151,9 @@ footer {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-
+}
+    
+.heroimage {
+    display: block;
 }
 }
