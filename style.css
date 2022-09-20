@@ -87,6 +87,8 @@ h2 {
 
 #portal {
     max-width: 600px;
+    width: 100%;
+    height: auto;
     border-radius: 200px 200px 0px 0px;
     display: block;
     margin-left: auto;
