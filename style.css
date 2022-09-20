@@ -77,6 +77,11 @@ body h1 {
     padding: 50px;
 }
 
+#portal {
+    max-width: 500px;
+    border-radius: 200px 200px 0px 0px;
+    }
+
 img {
     display: block;
 }
