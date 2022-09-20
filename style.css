@@ -78,9 +78,12 @@ body h1 {
 }
 
 #portal {
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 200px 200px 0px 0px;
-    }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 img {
     display: block;
