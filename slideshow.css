@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.0s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 1.0);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 0;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+/* Pause-Play */
+.buttons button#pause {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Disappearing Buttons */
+
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Background Images */
+ 
+.slide:first-child {
+  background: url('https://amandavalverde.github.io/celebratelilmchenry/001.jpg') no-repeat
+    center top/contain;
+}
+.slide:nth-child(2) {
+  background: url('https://amandavalverde.github.io/celebratelilmchenry/002.jpg') no-repeat
+    center top/contain;
+}
+.slide:nth-child(3) {
+  background: url('https://amandavalverde.github.io/celebratelilmchenry/003.jpg') no-repeat
+    center top/contain;
+}
+.slide:nth-child(4) {
+  background: url('https://amandavalverde.github.io/celebratelilmchenry/004.jpg') no-repeat
+    center top/contain;
+}
+.slide:nth-child(5) {
+  background: url('https://amandavalverde.github.io/celebratelilmchenry/005.jpg') no-repeat
+    center top/contain;
+} 
+.slide:nth-child(6)  {
+  background: url('https://amandavalverde.github.io/celebratelilmchenry/006.jpg') no-repeat
+    center center/contain;
+}
+.slide:nth-child(7)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/007.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(8)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/008.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(9)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/009.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(10)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/010.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(11)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/011.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(12)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/012.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(13)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/013.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(14)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/014.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(15)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/015.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(16)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/016.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(17)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/017.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(18)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/018.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(19)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/019.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(20)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/020.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(21)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/021.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(22)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/022.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(23)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/023.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(24)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/024.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(25)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/025.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(26)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/026.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(27)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/027.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(28)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/028.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(29)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/029.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(30)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/030.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(31)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/031.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(32)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/032.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(33)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/033.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(34)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/034.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(35)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/035.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(36)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/036.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(37)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/037.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(38)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/038.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(39)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/039.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(40)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/040.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(41)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/041.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(42)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/042.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(43)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/043.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(44)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/044.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(45)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/045.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(46)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/046.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(47)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/047.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(48)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/048.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(49)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/049.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(50)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/050.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(51)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/051.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(52)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/052.jpeg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(53)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/053.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(54)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/054.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(55)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/055.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(56)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/056.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(57)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/057.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(58)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/058.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(59)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/059.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(60)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/060.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(61)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/061.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(62)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/062.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(63)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/063.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(64)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/064.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(65)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/065.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(66)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/066.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(67)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/067.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(68)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/068.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(69)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/069.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(70)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/070.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(71)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/071.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(72)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/072.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(73)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/073.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(74)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/074.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(75)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/075.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(76)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/076.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(77)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/077.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(78)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/078.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(79)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/079.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(80)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/080.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(81)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/081.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(82)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/082.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(83)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/083.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(84)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/084.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(85)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/085.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(86)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/086.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(87)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/087.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(88)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/088.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(89)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/089.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(90)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/090.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(91)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/091.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(92)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/092.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(93)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/093.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(94)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/094.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(95)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/095.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(96)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/096.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(97)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/097.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(98)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/098.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(99)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/099.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(100)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/100.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(101)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/101.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(102)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/102.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(103)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/103.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(104)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/104.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(105)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/105.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(106)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/106.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(107)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/107.jpg') no-repeat
+      center center/contain;
+  }
+  .slide:nth-child(108)  {
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/108.jpg') no-repeat
+      center center/contain;
+  }
+
