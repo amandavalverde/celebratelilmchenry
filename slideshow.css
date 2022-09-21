@@ -460,10 +460,6 @@ body {
     background: url('https://amandavalverde.github.io/celebratelilmchenry/088.jpg') no-repeat
       center center/contain;
   }
-  .slide:nth-child(89)  {
-    background: url('https://amandavalverde.github.io/celebratelilmchenry/089.jpg') no-repeat
-      center center/contain;
-  }
   .slide:nth-child(90)  {
     background: url('https://amandavalverde.github.io/celebratelilmchenry/090.jpg') no-repeat
       center center/contain;
@@ -529,15 +525,19 @@ body {
       center center/contain;
   }
   .slide:nth-child(106)  {
-    background: url('https://amandavalverde.github.io/celebratelilmchenry/106.jpg') no-repeat
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/106.JPG') no-repeat
       center center/contain;
   }
   .slide:nth-child(107)  {
     background: url('https://amandavalverde.github.io/celebratelilmchenry/107.jpg') no-repeat
       center center/contain;
   }
+.slide:nth-child(107){
+    background: url('https://amandavalverde@github.io/celebratelilmchenry/IMG_4295.jpeg') no-repeat
+      center center/contain;
+}
   .slide:nth-child(108)  {
-    background: url('https://amandavalverde.github.io/celebratelilmchenry/108.jpg') no-repeat
+    background: url('https://amandavalverde.github.io/celebratelilmchenry/108.jpeg') no-repeat
       center center/contain;
   }
 
