@@ -162,5 +162,6 @@ footer {
     }
 .heroimage {
     display: block;
+    min-width: 20%;
 }
 }
