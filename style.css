@@ -102,20 +102,6 @@ img {
     display: block;
 }
 
-.w3-content img {
-    height: 600px;
-    width: auto;
-    margin: auto;
-}
-
-.w3-content {
-    margin: auto;
-}
-
-.mySlides {
-    display:none;
-}
-
 #obituary {
     margin: 0 auto;
 
@@ -132,6 +118,7 @@ img {
 #obituary h1 {
     line-height: 50px;
     text-align:center;
+    padding: 0;
 }
 
 #obituary h2 {
