@@ -43,6 +43,9 @@ h2 {
 }
 
 .container::before {
+    display: flex;
+    flex-direction: row;
+    content: "";
     background-image: url("https://amandavalverde.github.io/celebratelilmchenry/eucalyptus75.jpg");
     background-repeat: no-repeat;
     background-size: cover;
