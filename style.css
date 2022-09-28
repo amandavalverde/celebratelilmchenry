@@ -58,7 +58,6 @@ h2 {
 }
 
 .heroimage {
-    min-width: 20%;
     max-width: 35%;
     -ms-transform: rotate(-5deg); /* IE 9 */
     transform: rotate(-5deg);
@@ -164,6 +163,6 @@ footer {
     }
 .heroimage {
     display: block;
-    min-width: 20%;
+    object-fit: contain;
 }
 }
