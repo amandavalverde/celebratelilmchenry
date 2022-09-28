@@ -125,6 +125,10 @@ img {
     padding: 100px;
 }
 
+obituary > p {
+    text-align: justify;
+}
+
 #obituary h1 {
     line-height: 50px;
     text-align:center;
