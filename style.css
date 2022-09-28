@@ -40,13 +40,7 @@ h2 {
     color: #ffffff;
     line-height: 50px;
     padding: 50px;
-}
-
-.container::before {
-    display: flex;
-    flex-direction: row;
-    content: "";
-    background-image: url("https://amandavalverde.github.io/celebratelilmchenry/eucalyptus.jpg");
+    background-image: url("https://amandavalverde.github.io/celebratelilmchenry/eucalyptus75.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
