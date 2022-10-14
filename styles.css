@@ -226,7 +226,7 @@ to {
     /* added by bill */
     .container {
         display: block;
-        padding: 100px 0 0 0;
+        padding: 75px 0 0 0;
     }
 
     #text {
@@ -240,6 +240,7 @@ to {
     /* margin: 25px; */
     display: block;
     line-height: 45px;
+    padding-top: 20px;
     }
 
     /* added by bill */
