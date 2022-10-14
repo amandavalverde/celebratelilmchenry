@@ -226,7 +226,7 @@ to {
     /* added by bill */
     .container {
         display: block;
-        padding: 75px 0 0 0;
+        padding: 50px 0 0 0;
     }
 
     #text {
@@ -239,7 +239,7 @@ to {
     /* scale: 70%; */
     /* margin: 25px; */
     display: block;
-    line-height: 45px;
+    line-height: 40px;
     padding-top: 20px;
     }
 
