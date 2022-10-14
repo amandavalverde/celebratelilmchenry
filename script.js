@@ -1,0 +1,256 @@
+var imgNumber = 0;
+var path = ["https://amandavalverde.github.io/celebratelilmchenry/001.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/002.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/003.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/004.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/005.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/006.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/007.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/008.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/009.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/010.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/011.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/012.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/013.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/014.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/015.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/016.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/017.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/018.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/019.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/020.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/021.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/022.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/023.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/024.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/025.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/026.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/027.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/028.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/029.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/030.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/031.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/032.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/033.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/034.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/035.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/036.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/037.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/038.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/039.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/040.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/041.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/042.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/043.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/044.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/045.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/046.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/047.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/048.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/049.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/050.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/051.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/052.jpeg",
+  "https://amandavalverde.github.io/celebratelilmchenry/053.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/054.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/055.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/056.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/057.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/058.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/059.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/060.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/061.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/062.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/063.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/064.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/065.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/066.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/067.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/068.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/069.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/070.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/071.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/072.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/073.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/074.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/075.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/076.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/077.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/078.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/079.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/080.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/081.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/082.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/083.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/084.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/085.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/086.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/087.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/088.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/090.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/091.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/092.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/093.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/094.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/095.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/096.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/097.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/098.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/099.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/100.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/101.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/102.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/103.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/104.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/105.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/106.JPG",
+  "https://amandavalverde.github.io/celebratelilmchenry/107.jpg",
+  "https://amandavalverde.github.io/celebratelilmchenry/IMG_4295.png",
+  "https://amandavalverde.github.io/celebratelilmchenry/109.jpg",
+];
+var numberOfImg = path.length;
+var timer = null;
+const container = document.querySelector('#slideshow');
+
+
+
+/* function swapImage() {
+    const newSlide = document.createElement('div');
+    //newSlide.src = path[imgNumber];
+    newSlide.innerHTML = `<img src="${path[imgNumber]}">`;
+    newSlide.className = "fadeinimg";
+    container.appendChild(newSlide);
+    if (container.children.length > 2) {
+        container.removeChild(container.children[0]);
+    }
+} */
+
+function swapImage() {
+  const theImage = new Image();
+  theImage.scr = path[imgNumber];
+  const imgWidth = theImage.width;
+  const imgHeight = theImage.height;
+  const orientation = imgWidth > imgHeight ? "wide" : "tall";
+  const newSlide = document.createElement('div');
+  newSlide.src = path[imgNumber];
+  newSlide.innerHTML = `<img src="${path[imgNumber]}" class="${orientation}">`;
+  newSlide.className = "fadeinimg";
+  container.appendChild(newSlide);
+  if (container.children.length > 2) {
+      container.removeChild(container.children[0]);
+  }
+}
+
+function incrementNumber(){
+  if(imgNumber == path.length) {
+      imgNumber = 0;
+    }
+    else {
+      imgNumber++;
+    }
+}
+
+function runSlideshow(){
+  incrementNumber();
+  swapImage();
+}
+
+/* function slide() {
+  imgNumber = (imgNumber + 1) % path.length;
+  console.log(imgNumber);
+  document.getElementById("imgSlideshow").src = path[imgNumber];
+  changeCounter(imgNumber + 1, numberOfImg);
+} */
+
+function setTimer() {
+  if (timer) {
+    clearInterval(timer);
+    timer = null;
+  } else {
+    timer = setInterval(runSlideshow, 7000);
+  }
+  return false;
+}
+
+function previousImage() {
+  if (timer) {
+    clearInterval(timer);
+    timer = null;
+    imgNumber--;
+  }
+  imgNumber--;
+  if (imgNumber < 0) {
+    imgNumber = numberOfImg - 1;
+  }
+  console.log(`prev function ${imgNumber}`);
+  swapImage();
+  /* document.getElementById("imgSlideshow").src = path[imgNumber];
+  changeCounter(imgNumber + 1, numberOfImg); */
+  return false;
+}
+
+function nextImage() {
+  if (timer) {
+    clearInterval(timer);
+    timer = null;
+  }
+  ++imgNumber;
+  if (imgNumber > (numberOfImg - 1)) {
+    imgNumber = 0;
+  }
+  swapImage();
+  /* document.getElementById("imgSlideshow").src = path[imgNumber];
+  changeCounter(imgNumber + 1, numberOfImg); */
+  return false;
+}
+
+/* function changeCounter(cur, total) {
+  document.getElementById("counter").innerHTML = cur + "/" + total;
+}
+document.getElementById("counter").innerHTML = 1 + "/" + path.length; */
+
+
+
+// Disappearing Cursor
+
+(function() {
+    var mouseTimer = null, cursorVisible = true;
+
+    function disappearCursor() {
+        mouseTimer = null;
+        document.body.style.cursor = "none";
+        cursorVisible = false;
+    }
+
+    document.onmousemove = function() {
+        if (mouseTimer) {
+            window.clearTimeout(mouseTimer);
+        }
+        if (!cursorVisible) {
+            document.body.style.cursor = "default";
+            cursorVisible = true;
+        }
+        mouseTimer = window.setTimeout(disappearCursor, 1000);
+    };
+})();
+
+// Disappearing Buttons
+
+var timedelay = 1;
+function delayCheck()
+{
+if(timedelay == 1)
+{
+$('#button').fadeOut();
+timedelay = 1;
+}
+timedelay = timedelay+1;
+}
+$(document).mousemove(function() {
+$('#button').fadeIn();
+timedelay = 1;
+clearInterval(_delay);
+_delay = setInterval(delayCheck, 1000);
+});
+// page loads starts delay timer
+_delay = setInterval(delayCheck, 1000);
