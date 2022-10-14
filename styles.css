@@ -209,7 +209,7 @@ to {
 /* MEDIA QUERY */
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
     /* commented out by bill */
     /* .container > * {
         display:block;
@@ -239,6 +239,7 @@ to {
     /* scale: 70%; */
     /* margin: 25px; */
     display: block;
+    line-height: 45px;
     }
 
     /* added by bill */
