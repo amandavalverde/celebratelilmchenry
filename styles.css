@@ -159,7 +159,7 @@ margin: auto;
 
 #button {
 position: absolute;
-bottom: 50px;
+bottom: 65px;
 left: calc(50% - 125px);
 width: 250px;
 display: flex;
@@ -293,6 +293,9 @@ to {
     height: 300px;
     width: auto;
     }
+    
+    #button {
+    bottom: 75px;
 
 
 }
