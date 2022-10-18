@@ -207,6 +207,12 @@ to {
 }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 400px) {
+  body {
+    #button {
+    bottom: 125px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
   body {
